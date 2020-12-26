@@ -48,6 +48,10 @@ public class Base implements WebDriver{
 	public void click(By locator) {
 		driver.findElement(locator).click();
 	}
+
+	public void click(WebElement element) {
+		element.click();
+	}
 	
 	public boolean isDisplayed(By locator) {
 		try {
